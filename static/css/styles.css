@@ -175,13 +175,6 @@ ul {list-style-type: none;}
   color: #777;
 }
 
-/* Highlight the "current" day */
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
-}
-
 .carousel-item{
     height:45rem;
     background:black;
