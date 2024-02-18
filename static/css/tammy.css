@@ -1,1 +1,155 @@
+td {
+    width: 33%;
+}
 
+span {
+    display: inline-block;
+    width: 33%;
+    font-size: 1.5em;
+}
+
+.check {
+    background: none;
+    border: none;
+}
+
+.attendance {
+    width: 100px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: -20px;
+    margin-bottom: 5px;
+}
+
+
+.homeMeetings {
+    padding: 20px 50px 20px 50px;
+    width: 50%;
+}
+
+.posts {
+    padding: 10px 30px 30px 320px;
+}
+
+.homeMeetings2 {
+    margin-top: 50px;
+}
+
+.date {
+    width: 10%;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+body .fc {
+    font-size: 1em;
+}
+
+.fc {
+    direction: ltr;
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Month header */
+.month {
+    width: 50%;
+    background: #1abc9c;
+    text-align: center;
+    height: 8%;
+    display: block;
+}
+
+/* Month list */
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+    margin: 0;
+    background-color: #ddd;
+    width: 50%;
+    display: block;
+    height: 5%;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 12.3%;
+    color: #666;
+    text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+    width: 50%;
+    display: block;
+    height: 30%;
+}
+
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+
+.btn-group button {
+    width: 200px;
+    max-width: 200px;
+    height: 50%;
+}
+
+.container-side-by-side {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header1 {
+    float: left;
+    display: inline;
+    min-height: 100vh;
+}
