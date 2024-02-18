@@ -233,6 +233,53 @@ a.icons{
     font-size:100px;
 }
 
+.box{
+    display:flex;
+    align-items:left;
+    justify-content: center;
+    height:100vh;
+}
+
+.form-box{
+    padding:10px;
+    border-radius:5px;
+    background: #ececec;
+}
+
+.form-box input{
+    font-size:14px;
+    color:#000;
+    padding:10px 5px;
+    background:#ececec;
+}
+
+.form-box button{
+    color:#fff;
+    padding:10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius:5px;
+    background:#47d866;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.form-box button:hover{
+    background:#2ed35a;
+}
+
+body{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    background:#ececec;
+}
+
+.linkitem:hover{
+    background-color: #000;
+}
+
+
 /* .overlay-image{
     position:absolute;
     bottom:0;
