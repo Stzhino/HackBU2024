@@ -10,11 +10,27 @@
             float: left;
             display: inline;
             min-height: 100vh;
+            background-color:	#182c25;
         }
 
+        body {
+            margin: 0;
+         padding: 0;
+        }
+
+.header1 {
+  height: 100vh; /* Remove any fixed height here */
+  background: #182c25;
+  width: 270px;
+}
+
+.header1 > div { /* Ensure child elements also fill the height */
+  height: 100%;
+}
         .graph{
             display: inline;
             border: 10px solid orange;
+            
         }
 
     </style>
@@ -23,7 +39,7 @@
 <body>
     <div class="header1">
 
-    <div class="d-flex flex-column flex-shrink-0 p-3 vh-100" style="width: 270px; height: auto; background:	#182c25;">
+    <div class="d-flex flex-column  p-3" style="width: 270px; background:	#182c25;">
         <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
           <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
           <span class="fs-4">BEngaged</span>
