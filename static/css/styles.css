@@ -38,14 +38,16 @@ h2, div{
 /*tammy css*/
 
 .carousel-item{
-    height:32rem;
-    background:white;
+    height:45rem;
+    background:black;
     color:white;
     position: relative;
 }
 
 .fixText{
     color:black;
+    background:white;
+    height:32rem;
 }
 
 
@@ -69,3 +71,37 @@ a.icons{
     color: #fff;
     text-decoration: none;
 }
+.button1{
+    margin-left: 120px;
+}
+
+.nav-link{
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 10px;
+    font-size: 14px;
+ 
+}
+.signout{
+    font-size: 10px;
+    height: 50px;
+}
+
+.overlay-text{
+    position: absolute;
+    text-align:center;
+    top:40%;
+    left:37%;
+    font-size:100px;
+}
+
+/* .overlay-image{
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    background-position:center;
+    background-size:cover;
+    opacity:.5;
+} */
