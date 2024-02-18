@@ -7,19 +7,54 @@
         <link rel="stylesheet" href="./static/css/styles.css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #005A43;">
-          <span class="navbar-brand mb-0 h1 text-light">Binghamton</span>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #005A43; padding-left:15px;">
+          <img src="./static/images/bing.png" height="45"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <div class="button1">
+              </div>
+          
+              <li class="nav-item active">
+                <a class="nav-link" href="#" style="color:white;">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Groups</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: white;">News</a>
+              </li>
+            </ul>
+            <div class="btn-group" style="margin-top:5px;">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                <img class="rounded-circle" src="./static/images/person.jpg" width=30/>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end">
+                <li><a class="dropdown-item" href="#">My Clubs</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Sign Out</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
         <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./static/images/group1.jpg" class="d-block w-100" alt="first slide">
+                <img src="./static/images/hack1.jpg" class="d-block-xxl w-100" alt="first slide" style="opacity:50%;">
+                <h1 class="overlay-text">HackBU</h1>
               </div>
               <div class="carousel-item">
-                <img src="./static/images/group2.jpg" class="d-block w-100" alt="second slide">
+                <img src="./static/images/hack2.jpg" class="d-block-xxl w-100" alt="second slide" style="opacity:50%;">
+                <h1 class="overlay-text">HackBU</h1>
               </div>
               <div class="carousel-item">
-                <img src="./static/images/group3.jpg" class="d-block w-100" alt="third slide">
+                <img src="./static/images/hack3.jpg" class="d-block-xxl w-100" alt="third slide" style="opacity:50%;">
+                <h1 class="overlay-text">HackBU</h1>
               </div>
             </div>
         </div>
@@ -118,18 +153,46 @@
             </div>
           </div>
         </div>
-        <hr style="border: 2px solid green; width: 100%; text-align: center; margin:auto; margin-bottom: 5px;" />
-        <br />
-        <div class="px-4" style="text-align: right;">
-            <a class="icons" href="https://www.instagram.com/">
-                <img src="./static/images/insta.png" alt="instagram icon" style="width:30px; height:30px;"/>
-            </a>
-            <a class="icons" href="https://www.facebook.com/">
-                <img src="./static/images/facebook.png" alt="facebook icon" style="width:30px; height:30px;"/>
-            </a>
-            <a class="icons" href="https://www.groupme.com/">
-                <img src="./static/images/groupme.png" alt="instagram icon" style="width:30px; height:30px;"/>
-            </a>
+        <hr style="border: 2px solid green; width: 80%; text-align: center; margin:auto; margin-bottom:0;" />
+        <div class="container">
+          <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5">
+            <div class="col mb-3">
+              <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+            </div>
+        
+            <div class="col mb-3">
+        
+            </div>
+        
+            <div class="col mb-3">
+              
+            </div>
+        
+            <div class="col mb-3">
+            </div>
+            <div class="col mb-3">
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color:black;">HackBU</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color:black;"></a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color:black;">Binghamton University</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color:black;">Binghamton NY 13902</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0" style="color:black;">United States</a></li>
+              </ul>
+              <div class="px-4 py-5 text-right">
+                <a class="icons" href="https://www.instagram.com/hackbinghamton/">
+                    <img src="./static/images/insta.png" alt="instagram icon" style="width:30px; height:30px;"/>
+                </a>
+                <a class="icons" href="https://www.facebook.com/HackBinghamton/">
+                    <img src="./static/images/facebook.png" alt="facebook icon" style="width:30px; height:30px;"/>
+                </a>
+                <a class="icons" href="https://discord.com/invite/Xka5uUh">
+                    <img src="./static/images/discord.png" alt="discord icon" style="width:30px; height:30px;"/>
+                </a>
+              </div>
+            </div>
+          </footer>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
