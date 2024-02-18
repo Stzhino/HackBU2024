@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Club Posts Management Page</title>
+    <link rel="stylesheet" href="styles.css">
+</header>
+
+<body>
+    <div class="all">
+        <div class="header1">
+
+            <div class="d-flex flex-column flex-shrink-0 p-3 vh-100"
+                style="width: 270px; height: auto; background:	#182c25;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                    <svg class="bi pe-none me-2" width="40" height="32">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-4">BEngaged</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi pe-none me-2" width="16" height="16">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+                <div class="dropdown">
+
+                    <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+        <header class="p-3" style="background:#005B42;">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+
+                    <ul class="nav col-12 col-lg me-lg mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-secondary" style="margin-right: 15px;">Home</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white" style="margin-right: 15px;"">Groups</a></li>
+                      <li><a href=" #" class="nav-link px-2 text-white">Events</a></li>
+                        <li><a href="#" class="nav-link px-2 text-white">News</a></li>
+                    </ul>
+
+                    <div class="text-end">
+                        <img style="border-radius:10px;" src="./static/images/person.jpg" width=50 />
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="posts">
+        <div class="row">
+            <h3><u>Posts</u></h3>
+            <table class="table table-hover" style="width: 70%;">
+                <tbody>
+                    <tr>
+                        <td class="date">02/20</td>
+                        <td>Upcoming...</td>
+                        <td><em>Drafting</em></td>
+                        <td><button title="edit" class="check" type="button">🖊️</button></td>
+                    </tr>
+                    <tr>
+                        <td class="date">02/18</td>
+                        <td>Thank you for participating!</td>
+                        <td><em>Scheduled</em></td>
+                        <td><button title="edit" class="check" type="button">🖊️</button></td>
+                    </tr>
+                    <tr>
+                        <td class="date">02/15</td>
+                        <td>Donut Fundraiser</td>
+                        <td>Posted</td>
+                        <td><button title="edit" class="check" type="button">🖊️</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="writePost inline col-lg-6">
+                <h3><u>Draft Post</u></h3>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" style="width: 13%;">Title </span>
+                    <input type="text" class="form-control" placeholder="Insert cool title">
+                </div>
+                <div class="col-lg-12" style="margin-bottom: 10px;">
+                    <textarea class="form-control" placeholder="Come to our event this Tuesday!" rows="4"></textarea>
+                </div>
+            </div>
+            <div class="btn-group-vertical inline col-lg-4"
+                style="height: 20%; width: 15%;margin-top: 45px;">
+                <button type="button" class="btn btn-outline-success">Post</button>
+                <button type="button" class="btn btn-outline-secondary">Schedule</button>
+                <button type="button" class="btn btn-outline-primary">Save Draft</button>
+                <button type="button" class="btn btn-outline-info">Upload Files</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
