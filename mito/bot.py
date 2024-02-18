@@ -26,14 +26,6 @@ while True:
             new_message["content"] += chunk.choices[0].delta.content
 
     history.append(new_message)
-    
-    # Uncomment to see chat history
-    # import json
-    # gray_color = "\033[90m"
-    # reset_color = "\033[0m"
-    # print(f"{gray_color}\n{'-'*20} History dump {'-'*20}\n")
-    # print(json.dumps(history, indent=2))
-    # print(f"\n{'-'*55}\n{reset_color}")
 
     print()
     history.append({"role": "user", "content": input("> ")})
