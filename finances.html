@@ -18,15 +18,15 @@
          padding: 0;
         }
 
-.header1 {
-  height: 100vh; /* Remove any fixed height here */
-  background: #182c25;
-  width: 270px;
-}
+        .header1 {
+        height: 100vh; /* Remove any fixed height here */
+        background: #182c25;
+        width: 270px;
+        }
 
-.header1 > div { /* Ensure child elements also fill the height */
-  height: 100%;
-}
+        .header1 > div { /* Ensure child elements also fill the height */
+        height: 100%;
+        }
         .graph{
             display: inline;
             border: 10px solid orange;
@@ -48,32 +48,26 @@
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
             <a href="#" class="nav-link active" aria-current="page">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#"></use></svg>
               Home
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            <a href="eboardHome.html" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#eboardHome"></use></svg>
               Dashboard
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-              Orders
+            <a href="posts.html" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#posts"></use></svg>
+              Posts
             </a>
           </li>
           <li>
             <a href="#" class="nav-link text-white">
               <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
-              Products
-            </a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-white">
-              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-              Customers
+              University Home
             </a>
           </li>
         </ul>
@@ -101,14 +95,21 @@
             </a>
     
             <ul class="nav col-12 col-lg me-lg mb-2 justify-content-center mb-md-0">
-              <li><a href="#" class="nav-link px-2 text-secondary" style="margin-right: 15px;">Home</a></li>
-              <li><a href="#" class="nav-link px-2 text-white" style="margin-right: 15px;"">Groups</a></li>
+              <li><a href="#" class="nav-link px-2 text-black" style="margin-right: 15px;">Home</a></li>
+              <li><a href="#" class="nav-link px-2 text-white" style="margin-right: 15px;">Groups</a></li>
               <li><a href="#" class="nav-link px-2 text-white" >Events</a></li>
               <li><a href="#" class="nav-link px-2 text-white">News</a></li>
             </ul>
     
             <div class="text-end">
-              <img style="border-radius:10px;" src="./static/images/person.jpg" width=50/>
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                  <img class="rounded-circle" src="./static/images/person.jpg" width=30/>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg-end">
+                  <li><a class="dropdown-item" href="index.html">Club Directory</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Sign Out</a></li>
+                </ul>
             </div>
           </div>
         </div>

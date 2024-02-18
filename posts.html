@@ -3,10 +3,38 @@
 <header>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         .header1{
+            float: left;
+            display: inline;
+            min-height: 100vh;
+            background-color:	#182c25;
+        }
+
+        body {
+            margin: 0;
+         padding: 0;
+        }
+
+        .header1 {
+        height: 100vh; /* Remove any fixed height here */
+        background: #182c25;
+        width: 270px;
+        }
+
+        .header1 > div { /* Ensure child elements also fill the height */
+        height: 100%;
+        }
+        .graph{
+            display: inline;
+            border: 10px solid orange;
+            
+        }
+    </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Club Posts Management Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./static/css/tammy.css">
 </header>
 
 <body>
@@ -84,27 +112,33 @@
 
         <header class="p-3" style="background:#005B42;">
             <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                </a>
+        
+                <ul class="nav col-12 col-lg me-lg mb-2 justify-content-center mb-md-0">
+                  <li><a href="#" class="nav-link px-2 text-black" style="margin-right: 15px;">Home</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white" style="margin-right: 15px;">Groups</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white" >Events</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">News</a></li>
+                </ul>
+        
+                <div class="text-end">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                      <img class="rounded-circle" src="./static/images/person.jpg" width=30/>
                     </a>
-
-                    <ul class="nav col-12 col-lg me-lg mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2 text-secondary" style="margin-right: 15px;">Home</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white" style="margin-right: 15px;"">Groups</a></li>
-                      <li><a href=" #" class="nav-link px-2 text-white">Events</a></li>
-                        <li><a href="#" class="nav-link px-2 text-white">News</a></li>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                      <li><a class="dropdown-item" href="index.html">Club Directory</a></li>
+                      <li><a class="dropdown-item" href="#">Settings</a></li>
+                      <li><a class="dropdown-item" href="#">Sign Out</a></li>
                     </ul>
-
-                    <div class="text-end">
-                        <img style="border-radius:10px;" src="./static/images/person.jpg" width=50 />
-                    </div>
                 </div>
+              </div>
             </div>
         </header>
     </div>
+    
     <div class="posts">
         <div class="row">
             <h3><u>Posts</u></h3>

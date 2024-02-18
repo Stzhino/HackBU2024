@@ -147,9 +147,3 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-.header1 {
-    float: left;
-    display: inline;
-    min-height: 100vh;
-}
