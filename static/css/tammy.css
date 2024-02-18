@@ -48,10 +48,11 @@ h2 {
     width: 10%;
 }
 
-#calendar {
+.calendar {
     max-width: 900px;
     margin: 0 auto;
 }
+
 
 body .fc {
     font-size: 1em;
@@ -142,8 +143,29 @@ ul {
     height: 50%;
 }
 
-.container-side-by-side {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.header1{
+    float: left;
+    display: inline;
+    min-height: 100vh;
+    background-color:	#182c25;
+}
+
+body {
+    margin: 0;
+ padding: 0;
+}
+
+.header1 {
+height: 100vh; /* Remove any fixed height here */
+background: #182c25;
+width: 270px;
+}
+
+.header1 > div { /* Ensure child elements also fill the height */
+height: 100%;
+}
+.graph{
+    display: inline;
+    border: 10px solid orange;
+    
 }
